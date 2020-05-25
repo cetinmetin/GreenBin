@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "GreenBin",
+    "slug": "GreenBin",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+  }
+}
