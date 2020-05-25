@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Image, AppRegistry, StyleSheet, Text, TouchableOpacity, View, SafeAreaView, ImageBackground, TextInput, Picker, text, trim } from 'react-native';
+import { Image, AppRegistry, StyleSheet, Text, TouchableOpacity, View, SafeAreaView, ImageBackground, TextInput, Picker, text, ScrollView } from 'react-native';
 import { Input } from 'react-native-elements';
 import { TextButton, RaisedTextButton } from 'react-native-material-buttons';
 import firebase from 'firebase'
@@ -136,7 +136,7 @@ export default class ReportWasteScreen extends Component {
         return (
             <ImageBackground style={styles.container} source={require('../assets/images/formBg.jpg')}
                 imageStyle={{ opacity: 0.5 }}>
-                <View style={styles.form}>
+                <ScrollView style={styles.form}>
                     <Input inputStyle={styles.input} value={this.state.name} placeholder="Name" onChangeText={(text) => this.updateValue(text, 'name')} />
                     {!!this.state.nameError && (
                         <Text style={{ color: "red" }}>{this.state.nameError}</Text>
@@ -177,7 +177,7 @@ export default class ReportWasteScreen extends Component {
                     {!!this.state.success && (
                         <Text style={{ color: "white", alignSelf: "center", marginTop: "2%",marginHorizontal:"2%", fontSize: 18 }}>{this.state.success}</Text>
                     )}
-                </View>
+                </ScrollView>
             </ImageBackground>
         )
     }
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
     },
     form: {
         flex: 1,
-        justifyContent: "center",
+        marginTop:"12%",
         marginHorizontal: "5%",
     },
     input: {

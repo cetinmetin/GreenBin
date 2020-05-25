@@ -1,13 +1,14 @@
 {
   "expo": {
     "name": "GreenBin",
+	"icon":"C:/Users/Demon/Desktop/icon.png",
     "slug": "GreenBin",
     "platforms": [
       "ios",
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "scheme": "myapp",
     "updates": {
@@ -19,5 +20,9 @@
     "ios": {
       "supportsTablet": true
     },
+	"android": {
+      "package": "com.mcsoftware.greenbin",
+      "versionCode": 1
+    }
   }
 }
